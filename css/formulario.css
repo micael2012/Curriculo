@@ -7,7 +7,7 @@ html, body {
 	flex-flow:column; 
 	align-items:center; 
 	justify-content:center; 
-	width: 90%; min-height: 90%;
+	width: 80%; min-height: 70%;
 	background-color: #f1f1f1;
 	margin-top: 10px;
 	display: flex;
