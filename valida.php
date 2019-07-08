@@ -2,8 +2,8 @@
 
 $host= 'localhost';
 $bd= 'atento';
-$senhabd= '';
-$userbd = 'root';
+$senhabd= 'micael';
+$userbd = 'atento2019';
 
 
 
