@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-	alert("jquery funcionando");
+	
  	$('#nome').mask('SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS');
  	$('#idade').mask('00000');
 

@@ -1,6 +1,6 @@
 <?php
 
-$host= 'localhost';
+$host= 'mysql669.umbler.com';
 $bd= 'atento';
 $senhabd= 'micael';
 $userbd = 'atento2019';
