@@ -24,7 +24,7 @@ if(isst($_POST['acao'])){
 
 	$sql = $pdo->prepare("NSERT INTO 'formulario' VALUES(null,?,?,?)");
 	
-	$sql->execute();
+	$sql->execute(array($nome,$idade,$estado));
 	echo "Cliente inserido com sucesso";
 }
 
