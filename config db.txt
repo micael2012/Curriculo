@@ -1,0 +1,10 @@
+CREATE DATABASE atento;
+USER atento;
+
+CREATE TABLE formulario(
+id int(4) AUTO_INCREMENT,
+nome varchar(30),
+idade int(5),
+estado varchar(2),
+PRIMARY KEY (id)
+);
