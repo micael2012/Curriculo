@@ -1,4 +1,5 @@
 <?php
+
 define('SERVER', 'mysql669.umbler.com');
 define('BANCO', 'atento');
 define('SENHA', 'atento2019');
@@ -16,10 +17,16 @@ echo "Erro gerado " . $e->getMessage();
 
 
 
-$host= 'mysql669.umbler.com';
-$bd= 'atento';
-$senhabd= 'micael';
-$userbd = 'atento2019';
+if(isst($_POST['acao'])){
+	$nome=$_POST['nome'];
+	$idade=$_POST['idade'];
+	$estado=$_POST['estado'];
+
+	$sql = $pdo->prepare("NSERT INTO 'formulario' VALUES(null,?,?,?)");
+	
+	$sql->execute();
+	echo "Cliente inserido com sucesso";
+}
 
 
 
