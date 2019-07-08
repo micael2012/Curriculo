@@ -1,33 +1,17 @@
 <?php
 
-define('SERVER', 'mysql669.umbler.com');
-define('BANCO', 'atento');
-define('SENHA', 'atento2019');
-define('USER', 'micael');
 
-$con = new pdo('mysql:host=' . SERVER . ';dbname=' . BANCO, USER, SENHA);
-
-try{
-
-$con = new pdo('mysql:host=' . SERVER . ';dbname=' . BANCO, USER, SENHA);
-
-}catch(PDOException $e){
-echo "Erro gerado " . $e->getMessage(); 
-}
-
-
-
-if(isst($_POST['acao'])){
-	$nome=$_POST['nome'];
-	$idade=$_POST['idade'];
-	$estado=$_POST['estado'];
-
-	$sql = $pdo->prepare("NSERT INTO 'formulario' VALUES(null,?,?,?)");
-	
-	$sql->execute(array($nome,$idade,$estado));
-	echo "Cliente inserido com sucesso";
-}
-
-
+$servername = "mmysql669.umbler.com";
+$username = "micael";
+$database = "atento";
+$password = "atento2019";
+//  Create a new connection to the MySQL database using PDO
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+?>
 
 ?> 
